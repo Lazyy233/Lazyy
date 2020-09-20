@@ -1,0 +1,2 @@
+# Lazyy
+discord bot
