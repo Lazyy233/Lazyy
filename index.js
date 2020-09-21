@@ -22,17 +22,15 @@ config({
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: "me getting developed",
-            type: "STREAMING"
-        }
-    }); 
-});
+ });
+
+client.on("guildMemberAdd", member => {
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
+    welcomeChannel.send (`Welcome! ${member}`)
+})
 
 client.on("message", async message => {
-    const prefix = "_";
+    const prefix = ".";
 
     if (message.author.bot) return;
     if (!message.guild) return;
