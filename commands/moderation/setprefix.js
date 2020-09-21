@@ -14,5 +14,4 @@ if(!message.member.hasPermission("MANAGE_SERVER")) return message.channel.send('
         message.channel.send(`Succesffully set new prefix to **${args[0]}**`)
     }
 }
-}
-}
+
