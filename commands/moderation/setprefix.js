@@ -1,3 +1,5 @@
+const db = require('quick.db');
+
 module.exports = { name: "setprefix", aliases: ["prefixset", "sp"],
 category: "moderation",
 description: "Sets the prefix",
