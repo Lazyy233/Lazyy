@@ -22,6 +22,15 @@ config({
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
+    client.user.setPresence({
+        status: "online",
+        game: {
+            name: "me getting developed",
+            type: "STREAMING"
+        }
+    }); 
+});
+
 client.on("message", async message => {
     const prefix = "_";
 
