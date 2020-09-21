@@ -34,6 +34,7 @@
     "node-fetch": "^2.6.1",
     "prism-media": "^1.2.2",
     "process-nextick-args": "^2.0.1",
+    "quick.db": "^7.1.2",
     "random-puppy": "^1.1.0",
     "readable-stream": "^2.3.7",
     "regexp-clone": "^1.0.0",
